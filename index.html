@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 8 Math PECTA Exam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d6efd">
+</head>
+<body>
+  <div class="container" id="start-screen">
+    <h1>Class 8 Mathematics</h1>
+    <h2>PECTA Exam Pattern</h2>
+    <p><b>Total Marks:</b> 100 | <b>Total MCQs:</b> 10 | <b>Each MCQ:</b> 10 Marks</p>
+    <p><b>Passing Marks:</b> 33 | <b>Below 33:</b> Fail</p>
+    <p><b>Time:</b> 60 Minutes</p>
+    <button onclick="startExam()">Exam Start Karen</button>
+  </div>
+
+  <div class="container hide" id="exam-screen">
+    <div class="header">
+      <span id="q-count">Question 1/10</span>
+      <span id="timer">60:00</span>
+    </div>
+    <div id="question-box"></div>
+    <div class="btn-group">
+      <button onclick="prevQ()">Pehla</button>
+      <button onclick="nextQ()">Agla</button>
+      <button onclick="submitExam()">Submit Paper</button>
+    </div>
+  </div>
+
+  <div class="container hide" id="result-screen">
+    <h1>Result Card</h1>
+    <div id="result-box"></div>
+    <button onclick="downloadResult()">📥 Result Download</button>
+    <button onclick="shareResult()">📤 Result Share</button>
+    <button onclick="restartExam()">Dobara Attempt</button>
+  </div>
+
+<script src="script.js"></script>
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
