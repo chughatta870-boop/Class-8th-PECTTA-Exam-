@@ -1,0 +1,43 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  margin: 0; padding: 20px;
+  direction: rtl;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+h1 { color: #0d6efd; }
+button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover { background: #004aad; }
+.hide { display: none; }
+.header { display: flex; justify-content: space-between; margin-bottom: 15px; font-weight: bold; }
+.option {
+  display: block;
+  background: #e9ecef;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: right;
+}
+.option:hover { background: #d3e2ff; }
+.option input { margin-left: 10px; }
+#result-box { text-align: right; line-height: 2; }
+.pass { color: green; font-weight: bold; }
+.fail { color: red; font-weight: bold; }
